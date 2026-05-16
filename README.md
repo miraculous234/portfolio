@@ -32,6 +32,6 @@ This project is built purely using front-end web technologies without requiring 
 ├── index.html     # Single-file architecture containing markup, styling (CSS), and logic (JS)
 └── README.md      # Documentation file
 ---
-## 📝 License
+## 📄 License
 
-This project is open-source and free to use. Feel free to fork it, customize it, and use it as your personal landing page!
+This project is open-source and free to use.
