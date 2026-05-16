@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f7fb;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg, #4a00e0, #8e2de2);
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        header h1 {
+            font-size: 50px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+        /* NAVBAR */
+        nav {
+            background: #222;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #8e2de2;
+        }
+
+        /* SECTION */
+        section {
+            padding: 50px 10%;
+        }
+
+        h2 {
+            color: #4a00e0;
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        /* SKILLS */
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .skill-box:hover {
+            transform: translateY(-5px);
+        }
+
+        /* FOOTER */
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* CHATBOT */
+        .chat-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 300px;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+
+        .chat-header {
+            background: #4a00e0;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-weight: bold;
+        }
+
+        .chat-body {
+            height: 220px;
+            overflow-y: auto;
+            padding: 15px;
+        }
+
+        .bot-message {
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .chat-input {
+            display: flex;
+            border-top: 1px solid #ddd;
+        }
+
+        .chat-input input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            outline: none;
+        }
+
+        .chat-input button {
+            background: #4a00e0;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+
+        .chat-input button:hover {
+            background: #3000aa;
+        }
+
+        /* RESPONSIVE */
+        @media(max-width: 768px){
+            header h1 {
+                font-size: 35px;
+            }
+
+            .chat-container {
+                width: 90%;
+                right: 5%;
+                bottom: 10px;
+            }
+            
+            nav a {
+                margin: 0 8px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Your Name</h1>
+        <p>Your Profession / Specialization / Skills</p>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="card">
+            <p>Write a brief summary introduction about yourself here.</p>
+            <br>
+            <p>Add deeper information here: your career goals, core strengths, passions, hobbies, and what drives you.</p>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+        <h2>Education</h2>
+        <div class="card">
+            <h3>Your Degree Title</h3>
+            <p>University / School Name</p>
+            <p>Specialization: Your Major Field</p>
+            <p>Current CGPA / Grade: X.XX</p>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills">
+            <div class="skill-box">HTML</div>
+            <div class="skill-box">CSS</div>
+            <div class="skill-box">JavaScript</div>
+            <div class="skill-box">Git & GitHub</div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <div class="card">
+            <h3>Certification Title</h3>
+            <p>Issuing Organization | Date Earned</p>
+            <p>Brief summary of skills or validation gained through this certificate.</p>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="card">
+            <h3>Project Title</h3>
+            <p>Detailed description of your project. Mention the tech stack used and what problems it solves.</p>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="card">
+            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <p>LinkedIn: <a href="#" target="_blank">linkedin.com/in/yourprofile</a></p>
+        </div>
+    </section>
+
+    <!-- CHATBOT INTERFACE -->
+    <div class="chat-container">
+        <div class="chat-header">AI Assistant</div>
+        <div class="chat-body">
+            <div class="bot-message">Hi there! 👋 Ask me anything about my experience or skills!</div>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Type a message...">
+            <button>Send</button>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Your Name | Personal Portfolio</p>
+    </footer>
+    <!-- JAVASCRIPT FOR CHATBOT -->
+    <script>
+        const chatBody = document.getElementById('chatBody');
+        const chatInput = document.getElementById('chatInput');
+        const sendBtn = document.getElementById('sendBtn');
+
+        // Function to send a message
+        function sendMessage() {
+            const messageText = chatInput.value.trim();
+            if (messageText === '') return; // Don't send empty messages
+
+            // 1. Append User Message
+            const userDiv = document.createElement('div');
+            userDiv.classList.add('user-message');
+            userDiv.textContent = messageText;
+            chatBody.appendChild(userDiv);
+
+            // Clear Input
+            chatInput.value = '';
+
+            // Auto scroll to bottom
+            chatBody.scrollTop = chatBody.scrollHeight;
+
+            // 2. Trigger Bot Reply after a short delay
+            setTimeout(() => {
+                const botDiv = document.createElement('div');
+                botDiv.classList.add('bot-message');
+                botDiv.textContent = generateBotResponse(messageText);
+                chatBody.appendChild(botDiv);
+                
+                // Auto scroll to bottom again
+                chatBody.scrollTop = chatBody.scrollHeight;
+            }, 600);
+        }
+
+        // Simple Rule-Based Bot Responses
+        function generateBotResponse(input) {
+            const cleanInput = input.toLowerCase();
+
+            if (cleanInput.includes('hello') || cleanInput.includes('hi')) {
+                return "Hello! Hope you're having a great day. How can I help you explore this portfolio?";
+            } else if (cleanInput.includes('skill') || cleanInput.includes('tech')) {
+                return "I specialize in web development tools like HTML, CSS, JavaScript, and Git. Check out the Technical Skills section for details!";
+            } else if (cleanInput.includes('project')) {
+                return "You can view my projects right here on this page! Scroll down or click 'Projects' in the navbar.";
+            } else if (cleanInput.includes('contact') || cleanInput.includes('email')) {
+                return "You can reach me via the contact form/details listed below, or email me directly at my linked address.";
+            } else {
+                return "Thanks for reaching out! I'm an automated assistant. Please check the various sections of my portfolio to learn more about me.";
+            }
+        }
+
+        // Event Listeners for Send Button and Enter Key
+        sendBtn.addEventListener('click', sendMessage);
+        
+        chatInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+    </script>
+
+</body>
+</html>
